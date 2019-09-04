@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <title>Header</title>
 </head>
@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav side-nav animate">
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/jsp/cabinet.jsp">Главная<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/cabinet.jsp">Главная<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/jsp/createMagazine.jsp">Добавить журнал</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/createMagazine.jsp">Добавить журнал</a>
                     </li>                    
                 </ul>
 

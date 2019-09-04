@@ -29,7 +29,7 @@ public class LogoutServlet extends HttpServlet {
 		log.trace("Redirecting to Login page...");
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
-		response.getWriter().write("jsp/login.jsp");
+		response.getWriter().write("login.jsp");
 	}
 
 }

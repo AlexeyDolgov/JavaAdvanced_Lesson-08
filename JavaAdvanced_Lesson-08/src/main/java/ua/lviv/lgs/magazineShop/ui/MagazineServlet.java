@@ -39,7 +39,7 @@ public class MagazineServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
-		response.getWriter().write("Success");		
+		response.getWriter().write("Журнал \"" + title + "\" успешно добавлен в базу данных!");		
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

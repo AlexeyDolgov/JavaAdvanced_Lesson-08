@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 			log.trace("Checking user's password for matching database...");
 			if (user.getPassword().equals(password)) {
 				log.trace("Redirecting to User's account page...");
-				UserLogin userLogin = new UserLogin(user.getEmail(), "jsp/cabinet.jsp");
+				UserLogin userLogin = new UserLogin(user.getEmail(), "cabinet.jsp");
 				String json = new Gson().toJson(userLogin);
 				response.setContentType("application/json");
 				response.setCharacterEncoding("UTF-8");

@@ -7,16 +7,14 @@ $(document).ready(function() {
 
 function logout() {
 	$.get('loggingOut', function(data) {
-		if (typeof (data) === 'object') {
+		if (typeof (data) != '') {
 			var customUrl = '';
 			var urlContent = window.location.href.split('/');
 
 			for (var i = 0; i < urlContent.length - 1; i++) {
 				customUrl += urlContent[i] + '/';
 			}
-			window.location = customUrl + data.destinationUrl;
-		} else {
-			alert(data);
+			window.location = customUrl + data;
 		}
 	});
 }

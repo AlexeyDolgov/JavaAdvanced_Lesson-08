@@ -11,7 +11,7 @@
     	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     	integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">   
-    <link rel="stylesheet" href="../css/createMagazine.css">
+    <link rel="stylesheet" href="css/createMagazine.css">
 
     <title>Интернет-магазин журналов - Добавление журнала</title>
 </head>
@@ -40,8 +40,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="../js/header.js"></script>
-    <script src="../js/createMagazine.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/createMagazine.js"></script>
 </body>
 
 </html>

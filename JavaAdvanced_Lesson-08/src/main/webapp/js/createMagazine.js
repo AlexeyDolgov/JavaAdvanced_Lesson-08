@@ -1,3 +1,7 @@
+$('form').on('reset', function() {
+	$('input.publishDate').attr('type', 'text')
+})
+
 function up(e) {
 	if (e.value.indexOf('.') != '-1') {
 		e.value = e.value.substring(0, e.value.indexOf('.') + 3);
@@ -5,7 +9,9 @@ function up(e) {
 }
 
 function nullize(e) {
-	if (!e.value.includes('.')) {
+	if (e.value == '') {
+		e.value = ''
+	} else if (!e.value.includes('.')) {
 		e.value += '.00'
 	} else if (e.value.split('.')[1].length < 2) {
 		e.value += '0'
@@ -31,6 +37,7 @@ $('button.register').click(function() {
 		};
 
 		$.post('magazine', regFormMagazine, function(data) {
+			$('form').trigger('reset');
 			alert(data)			
 		});
 	}
